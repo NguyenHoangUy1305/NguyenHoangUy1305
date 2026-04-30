@@ -1,22 +1,55 @@
-name: WakaTime Image
+name: Super Metrics Bot
 
 on:
   schedule:
-    # Hẹn giờ chạy vào 0h30 (chạy sau bot kia 30 phút để không bị đụng nhau)
-    - cron: "30 0 * * *"
+    # Chạy 3 tiếng 1 lần để cập nhật cho nóng
+    - cron: "0 */3 * * *"
   workflow_dispatch:
 
 jobs:
-  build-image:
+  build-all-metrics:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Generate WakaTime Image
+      - name: Generate All Security & Backend Metrics
         uses: lowlighter/metrics@latest
         with:
-          filename: assets/wakatime.svg
+          # Cài đặt file chính (cái này bot tự quản lý)
           token: ${{ secrets.GITHUB_TOKEN }}
-          base: ""
+          base: "header, activity, community, repositories, metadata"
+          config_order: base.header, base.activity, base.community, base.repositories, base.metadata, wakatime, languages, habits
+          filename: assets/super-metrics.svg
+
+          # Cài đặt giao diện và màu sắc (Hacker/Matrix Green)
+          template: classic
+          config_timezone: Asia/Ho_Chi_Minh
+          output_action: commit
+          committer_name: github-actions[bot]
+          committer_email: github-actions[bot]@users.noreply.github.com
+          committer_message: "Updated Enterprise Secured Metrics"
+          plugin_languages: yes
+          plugin_languages_colors: "00FF99,ffffff"
+          
+          # [NÂNG CAO 1]: BIỂU ĐỒ THỜI GIAN CODE (WakaTime)
           plugin_wakatime: yes
-          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
+          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }} # Dùng cái key bạn đã cài
+          plugin_wakatime_sections: "time, projects, languages, editors, os"
+          plugin_wakatime_days: 7
+
+          # [NÂNG CAO 2]: THỐNG KÊ NGÔN NGỮ CHI TIẾT
+          plugin_languages_details: "bytes-size, percentage"
+          plugin_languages_threshold: 0%
+
+          # [NÂNG CAO 3]: THÓI QUEN ĐI ĐÊM (HABITS)
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_charts: yes
+          plugin_habits_trim: yes
+
+          # [NÂNG CAO 4]: TIMELINE DÒNG CODE
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+          plugin_activity_filter: push, issue, pr, release
