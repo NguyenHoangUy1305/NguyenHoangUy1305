@@ -21,65 +21,31 @@
 
 ## 🛠️ Security Arsenal & Enterprise Tech Stack
 
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🚀 Core Languages</h4>
-      <ul>
-        <li><b>Java</b> (J2EE, Spring Boot, Spring Cloud)</li>
-        <li><b>C#</b> (.NET Core, WinForms)</li>
-        <li><b>TypeScript</b> (Node.js ecosystem)</li>
-        <li><b>Dart</b> (Flutter Mobile Dev)</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🛡️ Security & Ops</h4>
-      <ul>
-        <li><b>Linux/Kali</b> (Vulnerability Assessment)</li>
-        <li><b>Docker</b> (Containerization)</li>
-        <li><b>Wireshark/Bash</b> (Network & Automation)</li>
-        <li><b>Raspberry Pi</b> (Homelab Management)</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🗄️ Database Management</h4>
-      <ul>
-        <li><b>Relational:</b> MySQL, PostgreSQL, SQL Server</li>
-        <li><b>NoSQL:</b> MongoDB</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🎮 Creative Tools</h4>
-      <ul>
-        <li><b>Unity</b> (Game Engine)</li>
-        <li><b>GitHub/GitLab</b> (Version Control)</li>
-        <li><b>Windows/Linux</b> (System Admin)</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
----
-
 <div align="center">
-  <h3>🔥 Global Security Dashboard</h3>
-  <p><i>Real-time GitHub Analytics</i></p>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=NguyenHoangUy1305&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NguyenHoangUy1305&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" />
+  <br>
+  <b>🚀 Core Languages & Backend</b><br>
+  <img src="https://skillicons.dev/icons?i=java,spring,cs,dotnet,ts,nodejs" />
+  <br><br>
+  <b>🛡️ Security, Mobile & Game Dev</b><br>
+  <img src="https://skillicons.dev/icons?i=linux,kali,bash,dart,flutter,unity" />
+  <br><br>
+  <b>🗄️ Database & Homelab Infrastructure</b><br>
+  <img src="https://skillicons.dev/icons?i=mysql,postgres,sql,mongodb,docker,raspberrypi,windows,git" />
 </div>
 
 <br>
 
+---
+
+## 📈 System Intelligence & Contribution Logs
+
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=NguyenHoangUy1305&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" />
+  <p><i>Automatically updated system metrics (GitHub & WakaTime integration)</i></p>
+  <br>
+  <img src="./assets/super-metrics.svg" alt="Advanced Super Metrics Dashboard" width="100%">
 </div>
 
----
+<br>
 
 <div align="center">
   <h3>🏆 System Achievements</h3>
