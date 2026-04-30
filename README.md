@@ -19,17 +19,47 @@
 
 ---
 
-<div align="center">
-  <h3>🛠️ Security Arsenal & Enterprise Tech Stack</h3>
-  <br>
-  <b>Languages & Core Stack</b><br>
-  <img src="https://skillicons.dev/icons?i=java,spring,cs,dotnet,dart,flutter,ts,nodejs,mysql,postgres,sql,mongodb" />
-  <br><br>
-  <b>Security, Infrastructure & Game Dev Tools</b><br>
-  <img src="https://skillicons.dev/icons?i=linux,kali,bash,github,gitlab,docker,raspberrypi,windows,unity" />
-</div>
+## 🛠️ Security Arsenal & Enterprise Tech Stack
 
-<br>
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🚀 Core Languages</h4>
+      <ul>
+        <li><b>Java</b> (J2EE, Spring Boot, Spring Cloud)</li>
+        <li><b>C#</b> (.NET Core, WinForms)</li>
+        <li><b>TypeScript</b> (Node.js ecosystem)</li>
+        <li><b>Dart</b> (Flutter Mobile Dev)</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🛡️ Security & Ops</h4>
+      <ul>
+        <li><b>Linux/Kali</b> (Vulnerability Assessment)</li>
+        <li><b>Docker</b> (Containerization)</li>
+        <li><b>Wireshark/Bash</b> (Network & Automation)</li>
+        <li><b>Raspberry Pi</b> (Homelab Management)</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🗄️ Database Management</h4>
+      <ul>
+        <li><b>Relational:</b> MySQL, PostgreSQL, SQL Server</li>
+        <li><b>NoSQL:</b> MongoDB</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🎮 Creative Tools</h4>
+      <ul>
+        <li><b>Unity</b> (Game Engine)</li>
+        <li><b>GitHub/GitLab</b> (Version Control)</li>
+        <li><b>Windows/Linux</b> (System Admin)</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -52,17 +82,7 @@
 ---
 
 <div align="center">
-  <h3>⏱️ Coding Activity Status</h3>
-  <p><i>WakaTime Tracker - Updated Daily</i></p>
-  </div>
-
----
-
-<div align="center">
   <h3>🏆 System Achievements</h3>
-</div>
-
-<div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=NguyenHoangUy1305&theme=onedark&no-frame=true&no-bg=true&margin-w=15" alt="Trophies" />
 </div>
 
@@ -84,7 +104,7 @@
   <a href="mailto:uy_dth235812@student.agu.edu.vn"><img src="https://img.shields.io/badge/AGU_University-00529B?style=for-the-badge&logo=google-scholar&logoColor=white" alt="AGU Gmail"/></a>
   <br><br>
 
-  <b>💬 Social Hubs & Dev Life</b><br>
+  <b>💬 Social Hubs</b><br>
   <a href="https://www.facebook.com/hoanguy1305dev"><img src="https://img.shields.io/badge/Facebook_(Dev)-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook Dev"/></a>
   <a href="https://www.facebook.com/profile.php?id=61585810582150"><img src="https://img.shields.io/badge/Facebook_(Personal)-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook Personal"/></a>
   <a href="https://www.instagram.com/hoanguy1305dev/"><img src="https://img.shields.io/badge/Instagram_(Dev)-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Dev"/></a>
@@ -102,7 +122,3 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=00FF99&height=100&section=footer" width="100%" />
 </div>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=NguyenHoangUy1305&style=for-the-badge&color=00FF99&label=SYSTEM+ACCESS+LOGS" alt="Profile Views" />
-</p>
