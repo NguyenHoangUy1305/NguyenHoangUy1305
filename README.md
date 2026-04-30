@@ -10,6 +10,7 @@
 - [Specializations & Architecture](#️-specializations--architecture)
 - [Tech Stack](#-tech-stack)
 - [Featured Projects](#-featured-projects)
+- [Coding Statistics](#️-coding-statistics)
 - [GitHub Stats](#-github-stats)
 
 ---
@@ -65,6 +66,14 @@ Outside of coding, I have a deep interest in **Cyber Security** and I am buildin
 - **[Student Management System]** — A desktop application to manage student information, scores, and reports using Java & SQL.
 - **[Personal Finance Manager]** — A mobile application built with Flutter & Node.js to track expenses and income efficiently.
 - **[REST API Backend]** — A backend system with secure authentication and robust database integration built with Node.js and SQL.
+
+---
+
+## ⏱️ Coding Statistics
+
+<p align="center">
+  <img src="./assets/wakatime.svg" alt="WakaTime Image Stats" width="100%">
+</p>
 
 ---
 
