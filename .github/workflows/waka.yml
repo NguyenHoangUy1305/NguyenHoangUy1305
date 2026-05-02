@@ -53,3 +53,4 @@ jobs:
           SHOW_UPDATED_DATE: "True"
           COMMIT_MESSAGE: "📊 Updated WakaTime Stats"
           SECTION_NAME: "waka"
+          COMMIT_BY_ME: "True" # <--- Tui đã thêm dòng này vào đây cho bạn nè!
