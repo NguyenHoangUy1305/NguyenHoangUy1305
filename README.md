@@ -29,10 +29,32 @@ I'm a multidisciplinary IT student with a strong passion for secure system desig
 - 🌱 Focusing on **Secure Coding**, Enterprise Architectures, and System Security.
 - 🛡️ Deeply passionate about **Cyber Security** and managing a personal **Homelab**.
 
-## 🌟 Tech Stack
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=java,spring,cs,dotnet,ts,nodejs,linux,kali,bash,dart,flutter,unity,mysql,postgres,mongodb,docker,git" />
-</div>
+## 🛡️ My Specializations
+- Secure Backend Development (Java / .NET)
+- Cyber Security & Penetration Testing Basics
+- Enterprise Software Architecture
+- Game Development (Unity)
+- Homelab Setup & System Administration
+
+## 🌟 My Skills
+
+![](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white)
+![](https://img.shields.io/badge/-Spring_Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white)
+![](https://img.shields.io/badge/-C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
+![](https://img.shields.io/badge/-.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white)
+![](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![](https://img.shields.io/badge/-Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![](https://img.shields.io/badge/-Unity-100000?style=flat-square&logo=unity&logoColor=white)
+![](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![](https://img.shields.io/badge/-Kali_Linux-557C94?style=flat-square&logo=kali-linux&logoColor=white)
+![](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+![](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 ---
 
@@ -41,6 +63,11 @@ I'm a multidisciplinary IT student with a strong passion for secure system desig
   <img src="https://github-readme-stats.vercel.app/api?username=NguyenHoangUy1305&count_private=true&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
   <br>
   <img src="https://streak-stats.demolab.com?user=NguyenHoangUy1305&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" />
+</div>
+
+## 🌐 Most Used Languages
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NguyenHoangUy1305&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" />
 </div>
 
 ---
@@ -56,3 +83,13 @@ I'm a multidisciplinary IT student with a strong passion for secure system desig
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/NguyenHoangUy1305/NguyenHoangUy1305/main/github-contribution-grid-snake.svg">
   </picture>
 </div>
+
+---
+
+## 🤝 Let's Connect
+I'm always open to interesting conversations, collaboration opportunities, or just talking about tech and security!
+
+- 📧 Email: 13hoanguy@gmail.com
+- 💼 LinkedIn: [Nguyen Hoang Uy](https://www.linkedin.com/in/nguyen-hoang-uy-259bb4406/)
+- 🌐 Facebook: [facebook.com/hoanguy1305dev](https://www.facebook.com/hoanguy1305dev)
+- 🎥 YouTube: [@NguyenHoangUy_1305](https://www.youtube.com/@NguyenHoangUy_1305)
