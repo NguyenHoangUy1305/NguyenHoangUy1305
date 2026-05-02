@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 */2 * * *" 
+
 jobs:
-  # 🐍 JOB 1: TẠO VÀ LƯU CON RẮN TRƯỚC
+  # 🐍 JOB 1: TẠO RẮN VÀ ĐẨY SANG NHÁNH 'output'
   update-snake:
     runs-on: ubuntu-latest
     permissions:
@@ -19,20 +20,21 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            assets/github-contribution-grid-snake.svg
-            assets/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Push Snake to repo
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Push Snake to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          commit_message: "🐍 Generate Contribution Snake"
-          branch: main
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  # ⏱️ JOB 2: ĐỢI RẮN XONG RỒI MỚI CẬP NHẬT WAKATIME
+  # ⏱️ JOB 2: CẬP NHẬT WAKATIME Ở NHÁNH 'main'
   update-wakatime:
-    needs: update-snake # Cú pháp này bắt buộc Job 2 đợi Job 1 xong mới chạy, tránh đụng chạm file
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -53,4 +55,4 @@ jobs:
           SHOW_UPDATED_DATE: "True"
           COMMIT_MESSAGE: "📊 Updated WakaTime Stats"
           SECTION_NAME: "waka"
-          COMMIT_BY_ME: "True" # <--- Tui đã thêm dòng này vào đây cho bạn nè!
+          COMMIT_BY_ME: "True"
