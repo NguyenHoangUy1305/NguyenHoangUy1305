@@ -24,24 +24,12 @@
 ---
 
 ## 🚀 About Me
-
 I'm a multidisciplinary IT student with a strong passion for secure system design, clean architecture, and modern technologies.
-
 - 🔭 3rd-year IT student at **An Giang University (AGU) - VNUHCM**.
 - 🌱 Focusing on **Secure Coding**, Enterprise Architectures, and System Security.
 - 🛡️ Deeply passionate about **Cyber Security** and managing a personal **Homelab**.
-- 💬 Ask me about: **Backend Security, API design, C# WinForms, and Unity**.
-
-## 🛡️ My Specializations
-
-- Backend Development (Java Spring Boot, C# .NET)
-- Enterprise Architectures
-- Cyber Security & Secure Coding
-- Game Development (Unity)
-- Database Optimization & API Design
 
 ## 🌟 Tech Stack
-
 <div align="center">
   <img src="https://skillicons.dev/icons?i=java,spring,cs,dotnet,ts,nodejs,linux,kali,bash,dart,flutter,unity,mysql,postgres,mongodb,docker,git" />
 </div>
@@ -49,42 +37,22 @@ I'm a multidisciplinary IT student with a strong passion for secure system desig
 ---
 
 ## 📊 GitHub Stats
-
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=NguyenHoangUy1305&count_private=true&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
-</div>
-
-<div align="center">
   <br>
   <img src="https://streak-stats.demolab.com?user=NguyenHoangUy1305&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" />
-</div>
-
-## 🌐 Most Used Languages
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NguyenHoangUy1305&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" />
 </div>
 
 ---
 
 ## ⏱️ Weekly Development Breakdown
-
 ---
 
 ## 🐍 Contribution Snake
-
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NguyenHoangUy1305/NguyenHoangUy1305/main/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NguyenHoangUy1305/NguyenHoangUy1305/main/github-contribution-grid-snake.svg">
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/NguyenHoangUy1305/NguyenHoangUy1305/main/github-contribution-grid-snake.svg">
   </picture>
-</div>
-
----
-
-## 🏆 Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=NguyenHoangUy1305&theme=onedark&no-frame=true&no-bg=true&margin-w=15" alt="Trophies" />
 </div>
