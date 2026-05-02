@@ -73,6 +73,10 @@ I'm a multidisciplinary IT student with a strong passion for secure system desig
 ---
 
 ## ⏱️ Weekly Development Breakdown
+**Timeline**
+
+![Lines of Code chart](https://raw.githubusercontent.com/NguyenHoangUy1305/NguyenHoangUy1305/main/assets/bar_graph.png)
+
 ---
 
 ## 🐍 Contribution Snake
