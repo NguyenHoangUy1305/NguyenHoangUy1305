@@ -3,25 +3,18 @@ name: Update Profile (WakaTime & Snake)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */2 * * *"
+    - cron: "0 */12 * * *" # Nên để 12 tiếng 1 lần để tránh bị GitHub khóa vì spam
 
 jobs:
-  update-everything:
+  # 🐍 JOB 1: TẠO VÀ LƯU CON RẮN TRƯỚC
+  update-snake:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GH_PAT }}
-          fetch-depth: 0
 
-      - name: Create assets folder
-        run: mkdir -p assets
-
-      # 1. Tạo con Rắn và đưa vào thư mục assets
       - name: Generate Contribution Snake
         uses: Platane/snk@v3
         with:
@@ -32,13 +25,23 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 2. Bắt buộc Git nhận diện file Rắn mới tạo
-      - name: Stage Snake files
-        run: |
-          git add assets/github-contribution-grid-snake.svg
-          git add assets/github-contribution-grid-snake-dark.svg
+      - name: Push Snake to repo
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🐍 Generate Contribution Snake"
+          branch: main
 
-      # 3. Chạy WakaTime và gom tất cả vào 1 commit duy nhất
+  # ⏱️ JOB 2: ĐỢI RẮN XONG RỒI MỚI CẬP NHẬT WAKATIME
+  update-wakatime:
+    needs: update-snake # Cú pháp này bắt buộc Job 2 đợi Job 1 xong mới chạy, tránh đụng chạm file
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+          fetch-depth: 0
+
       - name: Update WakaTime Stats
         uses: anmol098/waka-readme-stats@master
         with:
@@ -51,4 +54,3 @@ jobs:
           SHOW_UPDATED_DATE: "True"
           COMMIT_MESSAGE: "📊 Updated WakaTime Stats"
           SECTION_NAME: "waka"
-          COMMIT_BY_ME: "True"
