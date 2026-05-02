@@ -3,7 +3,7 @@ name: WakaTime Stats Update
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */2 * * *"
 
 jobs:
   update-readme:
@@ -23,7 +23,7 @@ jobs:
         uses: anmol098/waka-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GH_PAT }} # 👈 ĐÃ SỬA THÀNH GH_PAT ĐỂ HẾT BỊ CHẶN QUYỀN
+          GH_TOKEN: ${{ secrets.GH_PAT }}
           SHOW_OS: "True"
           SHOW_EDITORS: "True"
           SHOW_PROJECTS: "True"
