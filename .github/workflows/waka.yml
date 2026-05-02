@@ -3,8 +3,7 @@ name: Update Profile (WakaTime & Snake)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */12 * * *" # Nên để 12 tiếng 1 lần để tránh bị GitHub khóa vì spam
-
+    - cron: "0 */2 * * *" 
 jobs:
   # 🐍 JOB 1: TẠO VÀ LƯU CON RẮN TRƯỚC
   update-snake:
