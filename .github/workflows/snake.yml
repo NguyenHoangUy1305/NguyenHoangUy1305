@@ -13,12 +13,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
+      - name: Create assets folder
+        run: mkdir -p assets
+      
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            github-contribution-grid-snake.svg
-            github-contribution-grid-snake-dark.svg?palette=github-dark
+            assets/github-contribution-grid-snake.svg
+            assets/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
@@ -26,6 +29,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
-          git commit -m "🐍 Generate Contribution Snake" || echo "No changes to commit"
+          git add assets/github-contribution-grid-snake.svg assets/github-contribution-grid-snake-dark.svg
+          git commit -m "🐍 Generate Contribution Snake in Assets" || echo "No changes to commit"
           git push
