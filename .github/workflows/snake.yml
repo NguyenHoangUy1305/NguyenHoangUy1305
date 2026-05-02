@@ -2,8 +2,8 @@ name: Generate Snake
 
 on:
   schedule:
-    # Chạy mỗi 3 giờ một lần
-    - cron: "0 */3 * * *"
+    # Đồng bộ 6 giờ một lần cùng WakaTime
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
@@ -28,5 +28,5 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
-          git commit -m "Generate Contribution Snake" || echo "No changes to commit"
+          git commit -m "🐍 Generate Contribution Snake" || echo "No changes to commit"
           git push
