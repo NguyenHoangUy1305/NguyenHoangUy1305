@@ -1,22 +1,62 @@
-name: WakaReadme
+name: WakaTime Stats Update
 
 on:
-  schedule:
-    # Chạy mỗi 3 giờ một lần (vào phút thứ 0 của mỗi 3 giờ)
-    - cron: "0 */3 * * *"
   workflow_dispatch:
+  schedule:
+    # Chạy mỗi 6 giờ an toàn, mượt mà (Chống block API)
+    - cron: "0 */6 * * *"
 
 jobs:
   update-readme:
-    name: Update Readme with Metrics
+    name: Update WakaTime Stats in README
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
     steps:
-      - uses: athul/waka-readme@master
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Setup Git Config
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Update WakaTime Stats
+        uses: anmol098/waka-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          SHOW_TITLE: true
-          BLOCKS: ->
-          TIME_RANGE: all_time
-          LANG_COUNT: 5
-          SHOW_TIME: true
-          SHOW_MASKED_TIME: false
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          
+          # Cấu hình giao diện chi tiết giống Khánh Ròm
+          SHOW_OS: "True"
+          SHOW_EDITORS: "True"
+          SHOW_TIMEZONE: "True"
+          SHOW_PROJECTS: "True"
+          SHOW_LANGUAGE: "True"
+          SHOW_LANGUAGE_PER_REPO: "True"
+          SHOW_LOC_CHART: "True"
+          SHOW_COMMIT: "True"
+          SHOW_PROFILE_VIEWS: "True"
+          
+          # BÍ KÍP NHẢY THỜI GIAN LIÊN TỤC
+          SHOW_UPDATED_DATE: "True"
+          
+          # Tắt các mục không cần thiết cho gọn
+          SHOW_LINES_OF_CODE: "False"
+          SHOW_DAYS_OF_WEEK: "False"
+          SHOW_SHORT_INFO: "False"
+          SHOW_TOTAL_CODE_TIME: "False"
+          SHOW_TIMELINE: "False"
+          SHOW_TITLE: "False"
+          
+          # Mác hacker/security
+          COMMIT_MESSAGE: "🛡️ Auto-update WakaTime Stats (Security Bot)"
+          SECTION_NAME: "waka"
+          COMMIT_BY_ME: "True"
