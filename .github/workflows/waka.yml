@@ -6,7 +6,7 @@ on:
     - cron: "0 */2 * * *" 
 
 jobs:
-  # 🐍 JOB 1: TẠO RẮN VÀ ĐẨY SANG NHÁNH 'output'
+  # 🐍 JOB 1: TẠO RẮN
   update-snake:
     runs-on: ubuntu-latest
     permissions:
@@ -33,7 +33,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  # ⏱️ JOB 2: CẬP NHẬT WAKATIME Ở NHÁNH 'main'
+  # ⏱️ JOB 2: CẬP NHẬT WAKATIME
   update-wakatime:
     runs-on: ubuntu-latest
     steps:
@@ -53,6 +53,10 @@ jobs:
           SHOW_LANGUAGE: "True"
           SHOW_LOC_CHART: "True"
           SHOW_UPDATED_DATE: "True"
+          SHOW_EDITORS: "True"
+          SHOW_TIMEZONE: "True"
+          SHOW_COMMIT: "True"
+          SHOW_LANGUAGE_PER_REPO: "True"
           COMMIT_MESSAGE: "📊 Updated WakaTime Stats"
           SECTION_NAME: "waka"
           COMMIT_BY_ME: "True"
